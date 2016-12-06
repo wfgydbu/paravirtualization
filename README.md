@@ -37,7 +37,7 @@ To emphasize the concept of virtualization, we made some conventions when we sta
 
 1. Keep the structure of xv6 source code, including variable names, function names and file names, only modify them when it's necessary. 
 2. Preferentially use functions defined by xv6. For example, both *<string.h>* and xv6 implement function *memset(...)*. What we do is change the name of *memset* to *xv6_memset* and use xv6_memset.
-3. Always leave signature.  Xv6 uses *//* as its comments style, and we use */\*\*/* on every place we made modifications or add new contents.
+3. Always leave signature.  Xv6 uses *//* as its comments style, and we use `/**/` on every place we made modifications or add new contents.
 4. Don't delete codes. We comment all codes that are not needed so far instead of deleting them. 
  
 ### What we've done
