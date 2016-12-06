@@ -110,7 +110,7 @@ We don't implement logging either, but we leave a space for logging in our disk 
 ##### Inode, Directory and Pathname
 Xv6 implements these three parts in a single file *fs.c*, so we discuss them together. There are two concepts of *inode*, one is on-disk inodes, which is the physical data stored on the disk; another is in-memory inodes, which can be served as a "cache" to the on-disk inodes. The number of in-memory inodes has limited.
 
-Each inode has an *inum* as identify. Its element *type* in *struct inode* represents the type of *data* in this inode, it could be a file, a directory or a special device. 
+Each inode has an *inum* as identity. Its element *type* in *struct inode* represents the type of *data* in this inode, it could be a file, a directory or a special device. 
 
 Then two functions related to directory, *dirlink()* and *dir	lookup()*, provide interface to construct the tree structure of logical file system starts with '/', whose inum in its inode is 1.
 
